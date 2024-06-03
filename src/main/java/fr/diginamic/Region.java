@@ -1,5 +1,6 @@
 package fr.diginamic;
 
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -16,6 +17,8 @@ public class Region {
 	private int id;
 	@Column(name="NOM")
 	private String nom;
+	
+
 
 	/** Constructor
 	 * @param id

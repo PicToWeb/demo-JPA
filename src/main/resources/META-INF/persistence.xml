@@ -12,4 +12,13 @@
 			<property name="hibernate.show_sql" value="true" />
 		</properties>
 	</persistence-unit>
+	<persistence-unit name="biblio" transaction-type="RESOURCE_LOCAL">
+		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+		<properties>
+			<property name="jakarta.persistence.jdbc.url" value="jdbc:mysql://bubhgi2wfvbff0th0pkb-mysql.services.clever-cloud.com/bubhgi2wfvbff0th0pkb" />
+			<property name="jakarta.persistence.jdbc.user" value="u2unrbwlhdjggior" />
+			<property name="jakarta.persistence.jdbc.password" value="Y3PuwpeuQ1SoiJ2K9bSu" />
+			<property name="hibernate.show_sql" value="true" />
+		</properties>
+	</persistence-unit>
 </persistence>
