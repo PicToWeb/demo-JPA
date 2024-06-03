@@ -2,6 +2,8 @@ package fr.diginamic;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
@@ -10,6 +12,7 @@ import jakarta.persistence.Table;
 public class Region {
 	
 	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY) // pour auto_increment
 	private int id;
 	@Column(name="NOM")
 	private String nom;
@@ -29,6 +32,11 @@ public class Region {
 	 * @param nom
 	 */
 	public Region() {
+	}
+
+	@Override
+	public String toString() {
+		return "Region [getId()=" + getId() + ", getNom()=" + getNom() + "]";
 	}
 
 	/** Getter for id
